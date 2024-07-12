@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio>
+    <prato id="1">
+        <nome>Macarronada</nome>
+        <descricao>Macorronada show de bola</descricao>
+        <ingredientes>Macarrão</ingredientes>
+        <preco>R$5</preco>
+        <calorias>100kcal</calorias>
+        <tempodepreparo>10 minutos</tempodepreparo>
+    </prato>
+    <prato id="2">
+        <nome>Brigadeiro</nome>
+        <descricao>É isso aí</descricao>
+        <ingredientes>Leite condenado, chacolate</ingredientes>
+        <preco>R$10</preco>
+        <calorias>1000kcal</calorias>
+        <tempodepreparo>5 minuto</tempodepreparo>
+    </prato>
+    <prato id="3">
+        <nome>Vaca atolada</nome>
+        <descricao>Prato típico de alguma parte do Brasil</descricao>
+        <ingredientes>Vaca</ingredientes>
+        <preco>R$49,99</preco>
+        <calorias>683kcal</calorias>
+        <tempodepreparo>9 horas</tempodepreparo>
+    </prato>
+    <prato id="4">
+        <nome>Miojo</nome>
+        <descricao>Prato ótimo para adquirir câncer</descricao>
+        <ingredientes>Miojo e água</ingredientes>
+        <preco>R$2</preco>
+        <calorias>2kcal</calorias>
+        <tempodepreparo>9 segundos</tempodepreparo>
+    </prato>
+    <prato id="5">
+        <nome>Pão assado</nome>
+        <descricao>Pão assadinho</descricao>
+        <ingredientes>Pão</ingredientes>
+        <preco>R$149,99</preco>
+        <calorias>5671kcal</calorias>
+        <tempodepreparo>29 horas</tempodepreparo>
+    </prato>
+</cardapio>
