@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz [
+    <!ELEMENT quiz (disciplina, professor, turma, data, questões)>
+    <!ATTLIST quiz versao CDATA #REQUIRED>
+    <!ELEMENT disciplina (#PCDATA)>
+    <!ELEMENT professor (nome, matrícula?)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT matrícula (#PCDATA)>
+    <!ELEMENT turma (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT questões (questão+)>
+    <!ELEMENT questão (enunciado, pontuação, alternativas)>
+    <!ELEMENT enunciado (#PCDATA)>
+    <!ELEMENT pontuação (#PCDATA)>
+    <!ELEMENT alternativas (alternativa+)>
+    <!ELEMENT alternativa (#PCDATA)>
+    <!ATTLIST alternativa correta (sim|nao) #REQUIRED>
+]>
+<quiz versao="1">
+    <disciplina>Programação</disciplina>
+    <professor>
+        <nome>Neymar</nome>
+        <matrícula>01234567899876</matrícula>
+    </professor>
+    <turma>InfoWeb</turma>
+    <data>17/07/2024</data>
+    <questões>
+        <questão>
+            <enunciado>Marque a letra</enunciado>   
+            <pontuação>100</pontuação>
+            <alternativas>
+                <alternativa correta="sim">a</alternativa>
+                <alternativa correta="nao">2</alternativa>
+                <alternativa correta="nao">86</alternativa>
+                <alternativa correta="nao">987321</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é a raiz quadrada de 144?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">10</alternativa>
+                <alternativa correta="sim">12</alternativa>
+                <alternativa correta="nao">14</alternativa>
+                <alternativa correta="nao">16</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o resultado de 9 x 8?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">72</alternativa>
+                <alternativa correta="nao">64</alternativa>
+                <alternativa correta="nao">81</alternativa>
+                <alternativa correta="nao">70</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o valor de Pi (π) arredondado a duas casas decimais?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="sim">3.14</alternativa>
+                <alternativa correta="nao">3.15</alternativa>
+                <alternativa correta="nao">3.13</alternativa>
+                <alternativa correta="nao">3.12</alternativa>
+            </alternativas>
+        </questão>
+        <questão>
+            <enunciado>Qual é o maior número primo menor que 20?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">17</alternativa>
+                <alternativa correta="sim">19</alternativa>
+                <alternativa correta="nao">13</alternativa>
+                <alternativa correta="nao">11</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>
