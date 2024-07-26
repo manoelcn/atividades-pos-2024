@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cardapio xmlns="http://cardapio.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://cardapio.org 
+                                cardapio.xsd">
+    <prato id="1">
+        <nome>Espaguete à Bolonhesa</nome>
+        <descricao>Delicioso espaguete com molho bolonhesa.</descricao>
+        <ingredientes>
+            <ingrediente>Espaguete</ingrediente>
+            <ingrediente>Carne moída</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Cebola</ingrediente>
+            <ingrediente>Alho</ingrediente>
+            <ingrediente>Sal</ingrediente>
+            <ingrediente>Pimenta</ingrediente>
+        </ingredientes>
+        <preco>25.50</preco>
+        <calorias>600</calorias>
+        <tempoPreparo>30 minutos</tempoPreparo>
+    </prato>
+    <prato id="2">
+        <nome>Salada Caesar</nome>
+        <descricao>Salada clássica com alface, croutons e molho Caesar.</descricao>
+        <ingredientes>
+            <ingrediente>Alface</ingrediente>
+            <ingrediente>Croutons</ingrediente>
+            <ingrediente>Molho Caesar</ingrediente>
+            <ingrediente>Queijo parmesão</ingrediente>
+            <ingrediente>Frango grelhado</ingrediente>
+        </ingredientes>
+        <preco>18.00</preco>
+        <calorias>350</calorias>
+        <tempoPreparo>15 minutos</tempoPreparo>
+    </prato>
+</cardapio>
