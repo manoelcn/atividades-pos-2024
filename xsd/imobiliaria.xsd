@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:i="http://imobiliaria.org"
+        targetNamespace="http://imobiliaria.org" elementFormDefault="qualified">
+
+    <element name="descricao" type="string"></element>
+    <element name="valor" type="string"></element>
+
+    <element name="proprietario">
+        <complexType>
+            <sequence>
+                <element name="nome" type="string"></element>
+                <choice minOccurs="0" maxOccurs="unbounded">
+                    <element name="email" type="string"></element>
+                    <element name="telefone" type="string"></element>
+                </choice>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="endereco">
+        <complexType>
+            <sequence>
+                <element name="rua" type="string"></element>
+                <element name="bairro" type="string"></element>
+                <element name="cidade" type="string"></element>
+                <element name="numero" type="integer" minOccurs="0"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="caracteristicas">
+        <complexType>
+            <sequence>
+                <element name="tamanho" type="decimal"></element>
+                <element name="numQuartos" type="integer"></element>
+                <element name="numBanheiros" type="integer"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="imobiliaria">
+        <complexType>
+            <sequence>
+                <element name="imovel" minOccurs="1" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element ref="i:descricao"></element>
+                            <element ref="i:proprietario"></element>
+                            <element ref="i:endereco"></element>
+                            <element ref="i:caracteristicas"></element>
+                            <element ref="i:valor"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
