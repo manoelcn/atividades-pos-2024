@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:q="http://quiz.org"
+        targetNamespace="http://quiz.org" elementFormDefault="qualified">
+    
+        <element name="disciplina" type="string"></element>
+        <element name="professor">
+            <complexType>
+                <sequence>
+                    <element name="nome" type="string"></element>
+                    <element name="matricula" type="string" minOccurs="0"></element>
+                </sequence>
+            </complexType>
+        </element>
+        <element name="turma" type="string"></element>
+        <element name="data" type="string"></element>
+        <element name="questoes">
+            <complexType>
+                <sequence>
+                    <element name="questao">
+                        <complexType>
+                            <sequence>
+                                <element name="enunciado" type="string"></element>
+                                <element name="pontuação" type="string"></element>
+                                <element name="alternativas" >
+                                    <complexType>
+                                        <sequence>
+                                            <element name="alternativa"></element>
+                                        </sequence>
+                                        <attribute name="correta" type="string" use="required"></attribute>
+                                    </complexType>
+                                </element>
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+            </complexType>
+        </element>
+    
+        <element name="quiz">
+            <complexType>
+                <sequence>
+                    <element ref="q:disciplina"></element>
+                    <element ref="q:professor"></element>
+                    <element ref="q:turma"></element>
+                    <element ref="q:data"></element>
+                    <element ref="q:questoes"></element>
+                </sequence>
+            </complexType>
+        </element>
+
+</schema>
