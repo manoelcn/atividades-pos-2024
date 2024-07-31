@@ -1,0 +1,58 @@
+{
+    "cardapio":
+    {
+        "prato": [
+            {
+                "id": "p1",
+                "nome": "Feijoada",
+                "descricao": "Tradicional prato brasileiro de feijão",
+                "ingredientes": [
+                    "Feijão preto",
+                    "Carne de porco",
+                    "Linguiça",
+                    "Farinha"
+                ],
+                "preco": {
+                    "valor": "50.00",
+                    "moeda": "BRL"
+                },
+                "calorias": "800",
+                "tempoPreparo": "120"
+            },
+            {
+                "id": "p2",
+                "nome": "Moqueca",
+                "descricao": "Ensopado de peixe e camarão com leite de coco e dendê.",
+                "ingredientes": [
+                    "Peixe",
+                    "Camarão",
+                    "Leite de coco",
+                    "Azeite de dendê"
+                ],
+                "preco": {
+                    "valor": "60.00",
+                    "moeda": "BRL"
+                },
+                "calorias": "700",
+                "tempoPreparo": "90"
+            },
+            {
+                "id": "p3",
+                "nome": "Picanha",
+                "descricao": "Corte nobre de carne bovina grelhada.",
+                "ingredientes": [
+                    "Picanha",
+                    "Sal grosso",
+                    "Manteiga"
+                ],
+                "preco": {
+                    "valor": "80.00",
+                    "moeda": "BRL"
+                },
+                "calorias": "900",
+                "tempoPreparo": "60"
+            }
+
+        ]
+    }
+}

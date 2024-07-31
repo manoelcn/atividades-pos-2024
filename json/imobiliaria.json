@@ -1,0 +1,70 @@
+{
+    "imobiliaria": {
+        "imovel": [
+            {
+                "descricao": "Apartamento moderno no centro da cidade",
+                "proprietario": {
+                    "nome": "Maria Silva",
+                    "email": "maria.silva@example.com",
+                    "telefone": [
+                        "(11) 98765-4321",
+                        "(11) 91234-5678"
+                    ]
+                },
+                "endereco": {
+                    "rua": "Rua das Flores",
+                    "bairro": "Centro",
+                    "cidade": "São Paulo"
+                },
+                "caracteristicas": {
+                    "tamanho": "85m²",
+                    "numQuartos": 3,
+                    "numBanheiros": 3
+                },
+                "valor": "R$ 500.000"
+            },
+            {
+                "descricao": "Casa com jardim e piscina",
+                "proprietario": {
+                    "nome": "Carlos Pereira",
+                    "email": "carlos.pereira@example.com",
+                    "telefone": [
+                        "(21) 99999-8888"
+                    ]
+                },
+                "endereco": {
+                    "rua": "Avenida das Palmeiras",
+                    "bairro": "Zona Sul",
+                    "cidade": "Rio de Janeiro"
+                },
+                "caracteristicas": {
+                    "tamanho": "200m²",
+                    "numQuartos": 4,
+                    "numBanheiros": 3
+                },
+                "valor": "R$ 1.500.000"
+            },
+            {
+                "descricao": "Cobertura duplex com vista para o mar",
+                "proprietario": {
+                    "nome": "Ana Paula",
+                    "email": "ana.paula@example.com",
+                    "telefone": [
+                        "(31) 98765-1234"
+                    ]
+                },
+                "endereco": {
+                    "rua": "Rua da Praia",
+                    "bairro": "Ponta Verde",
+                    "cidade": "Maceió"
+                },
+                "caracteristicas": {
+                    "tamanho": "300m²",
+                    "numQuartos": 5,
+                    "numBanheiros": 4
+                },
+                "valor": "R$ 3.000.000"
+            }
+        ]
+    }
+}

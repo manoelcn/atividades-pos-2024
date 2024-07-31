@@ -1,0 +1,49 @@
+{
+    "quiz": {
+        "disciplina": "Programação",
+        "professor": {
+            "nome": "Neymar",
+            "matricula": "01234567899876"
+        },
+        "turma": "InfoWeb",
+        "data": "17/07/2024",
+        "questoes": [
+            {
+                "questao": {
+                    "enunciado": "Marque a letra",
+                    "pontuacao": "100",
+                    "alternativas": [
+                        "a",
+                        2,
+                        86,
+                        987321
+                    ]
+                }
+            },
+            {
+                "questao": {
+                    "enunciado": "Qual é o resultado de 5 + 3?",
+                    "pontuacao": "50",
+                    "alternativas": [
+                        6,
+                        7,
+                        8,
+                        9
+                    ]
+                }
+            },
+            {
+                "questao": {
+                    "enunciado": "Qual a linguagem usada para estilizar páginas web?",
+                    "pontuacao": "75",
+                    "alternativas": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Python"
+                    ]
+                }
+            }
+        ]
+    }
+}
