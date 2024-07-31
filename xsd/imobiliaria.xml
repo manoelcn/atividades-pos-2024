@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imobiliaria xmlns="http://imobiliaria.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://imobiliaria.org 
+                                imobiliaria.xsd">
+
+    <imovel>
+        <descricao>Apartamento no centro</descricao>
+        <proprietario>
+            <nome>João Silva</nome>
+            <email>joao.silva@example.com</email>
+            <telefone>123456789</telefone>
+            <telefone>987654321</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Central</rua>
+            <bairro>Centro</bairro>
+            <cidade>São Paulo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>80.5</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>450000.00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Casa na praia</descricao>
+        <proprietario>
+            <nome>Maria Oliveira</nome>
+            <telefone>987654321</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua da Praia</rua>
+            <bairro>Praia Grande</bairro>
+            <cidade>Fortaleza</cidade>
+            <numero>100</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>150.0</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>800000.00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Sítio no interior</descricao>
+        <proprietario>
+            <nome>Antonio Santos</nome>
+            <email>antonio.santos@example.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Estrada do Campo</rua>
+            <bairro>Zona Rural</bairro>
+            <cidade>Campinas</cidade>
+            <numero>2000</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>300.0</tamanho>
+            <numQuartos>5</numQuartos>
+            <numBanheiros>4</numBanheiros>
+        </caracteristicas>
+        <valor>1200000.00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Kitnet mobiliada</descricao>
+        <proprietario>
+            <nome>Lucas Pereira</nome>
+            <telefone>123123123</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua dos Estudantes</rua>
+            <bairro>Universitário</bairro>
+            <cidade>Recife</cidade>
+            <numero>45</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>35.0</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>150000.00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Chácara para eventos</descricao>
+        <proprietario>
+            <nome>Carla Mendes</nome>
+            <telefone>555555555</telefone>
+            <email>carla.mendes@example.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Alameda dos Ipês</rua>
+            <bairro>Parque Verde</bairro>
+            <cidade>Curitiba</cidade>
+            <numero>500</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>500.0</tamanho>
+            <numQuartos>6</numQuartos>
+            <numBanheiros>5</numBanheiros>
+        </caracteristicas>
+        <valor>2000000.00</valor>
+    </imovel>
+</imobiliaria>
