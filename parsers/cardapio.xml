@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+<cardapio>
+    <prato id="p1">
+        <nome>Feijoada</nome>
+        <descricao>Tradicional prato brasileiro de feijão preto com carnes.</descricao>
+        <ingredientes>
+            <ingrediente>Feijão preto</ingrediente>
+            <ingrediente>Carne de porco</ingrediente>
+            <ingrediente>Linguiça</ingrediente>
+            <ingrediente>Farinha</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 50.00</preco>
+        <calorias>800</calorias>
+        <tempoPreparo>120</tempoPreparo>
+    </prato>
+    <prato id="p2">
+        <nome>Moqueca</nome>
+        <descricao>Ensopado de peixe e camarão com leite de coco e dendê.</descricao>
+        <ingredientes>
+            <ingrediente>Peixe</ingrediente>
+            <ingrediente>Camarão</ingrediente>
+            <ingrediente>Leite de coco</ingrediente>
+            <ingrediente>Azeite de dendê</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 60.00</preco>
+        <calorias>700</calorias>
+        <tempoPreparo>90</tempoPreparo>
+    </prato>
+    <prato id="p3">
+        <nome>Picanha</nome>
+        <descricao>Corte nobre de carne bovina grelhada.</descricao>
+        <ingredientes>
+            <ingrediente>Picanha</ingrediente>
+            <ingrediente>Sal grosso</ingrediente>
+            <ingrediente>Manteiga</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 80.00</preco>
+        <calorias>900</calorias>
+        <tempoPreparo>60</tempoPreparo>
+    </prato>
+    <prato id="p4">
+        <nome>Strogonoff de Frango</nome>
+        <descricao>Frango cozido em um molho cremoso com cogumelos.</descricao>
+        <ingredientes>
+            <ingrediente>Frango</ingrediente>
+            <ingrediente>Cogumelos</ingrediente>
+            <ingrediente>Creme de leite</ingrediente>
+            <ingrediente>Ketchup</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 45.00</preco>
+        <calorias>600</calorias>
+        <tempoPreparo>45</tempoPreparo>
+    </prato>
+    <prato id="p5">
+        <nome>Salada Caesar</nome>
+        <descricao>Salada de alface com molho Caesar e frango grelhado.</descricao>
+        <ingredientes>
+            <ingrediente>Alface</ingrediente>
+            <ingrediente>Frango grelhado</ingrediente>
+            <ingrediente>Molho Caesar</ingrediente>
+            <ingrediente>Queijo parmesão</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 35.00</preco>
+        <calorias>350</calorias>
+        <tempoPreparo>20</tempoPreparo>
+    </prato>
+</cardapio>
