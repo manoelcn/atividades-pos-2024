@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imobiliaria [
+    <!ELEMENT imobiliaria (imovel+)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+    <!ELEMENT proprietario (nome, (email | telefone)+)>
+    <!ELEMENT endereco (rua, bairro, cidade, numero?)>
+    <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+    <!ELEMENT descricao (#PCDATA)>
+    <!ELEMENT valor (#PCDATA)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+    <!ELEMENT rua (#PCDATA)>
+    <!ELEMENT bairro (#PCDATA)>
+    <!ELEMENT cidade (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT tamanho (#PCDATA)>
+    <!ELEMENT numQuartos (#PCDATA)>
+    <!ELEMENT numBanheiros (#PCDATA)>
+]>
+<imobiliaria>
+    <imovel>
+        <descricao>Apartamento moderno no centro da cidade</descricao>
+        <proprietario>
+            <nome>Maria Silva</nome>
+            <email>maria.silva@example.com</email>
+            <telefone>(11) 98765-4321</telefone>
+            <telefone>(11) 91234-5678</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Flores</rua>
+            <bairro>Centro</bairro>
+            <cidade>São Paulo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>85m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 500.000</valor>
+    </imovel>
+    <imovel>
+        <descricao>Casa com quintal amplo</descricao>
+        <proprietario>
+            <nome>João Oliveira</nome>
+            <telefone>(21) 99876-5432</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Avenida Brasil</rua>
+            <bairro>Jardim das Acácias</bairro>
+            <cidade>Rio de Janeiro</cidade>
+            <numero>123</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>150m²</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 800.000</valor>
+    </imovel>
+    <imovel>
+        <descricao>Apartamento com vista para o mar</descricao>
+        <proprietario>
+            <nome>Ana Costa</nome>
+            <email>ana.costa@example.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua Atlântica</rua>
+            <bairro>Copacabana</bairro>
+            <cidade>Rio de Janeiro</cidade>
+            <numero>456</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>70m²</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 1.200.000</valor>
+    </imovel>
+    <imovel>
+        <descricao>Chácara em área rural</descricao>
+        <proprietario>
+            <nome>Carlos Almeida</nome>
+            <telefone>(31) 98765-4321</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Estrada do Sol</rua>
+            <bairro>Zona Rural</bairro>
+            <cidade>Belo Horizonte</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>200m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 600.000</valor>
+    </imovel>
+    <imovel>
+        <descricao>Apartamento compacto sem número de rua</descricao>
+        <proprietario>
+            <nome>Fernanda Souza</nome>
+            <telefone>(19) 91234-5678</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Sem Nome</rua>
+            <bairro>Centro</bairro>
+            <cidade>Campinas</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>45m²</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 250.000</valor>
+    </imovel>
+</imobiliaria>
