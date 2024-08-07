@@ -1,0 +1,67 @@
+{
+    "imobiliaria": [
+        {
+            "descricao": "Apartamento moderno no centro da cidade",
+            "nome": "Maria Silva",
+            "email": "maria.silva@example.com",
+            "telefone": "(11) 91234-5678",
+            "rua": "Rua das Flores",
+            "bairo": "Centro",
+            "cidade": "São Paulo",
+            "tamanho": "85m²",
+            "numQuartos": "3",
+            "numBanheiros": "2",
+            "valor": "R$ 500.000"
+        },
+        {
+            "descricao": "Casa com quintal amplo",
+            "nome": "João Oliveira",
+            "telefone": "(21) 99876-5432",
+            "rua": "Avenida Brasil",
+            "bairo": "Jardim das Acácias",
+            "cidade": "Rio de Janeiro",
+            "numero": "123",
+            "tamanho": "150m²",
+            "numQuartos": "4",
+            "numBanheiros": "3",
+            "valor": "R$ 800.000"
+        },
+        {
+            "descricao": "Apartamento com vista para o mar",
+            "nome": "Ana Costa",
+            "email": "ana.costa@example.com",
+            "rua": "Rua Atlântica",
+            "bairo": "Copacabana",
+            "cidade": "Rio de Janeiro",
+            "numero": "456",
+            "tamanho": "70m²",
+            "numQuartos": "2",
+            "numBanheiros": "1",
+            "valor": "R$ 1.200.000"
+        },
+        {
+            "descricao": "Chácara em área rural",
+            "nome": "Carlos Almeida",
+            "telefone": "(31) 98765-4321",
+            "rua": "Estrada do Sol",
+            "bairo": "Zona Rural",
+            "cidade": "Belo Horizonte",
+            "tamanho": "200m²",
+            "numQuartos": "3",
+            "numBanheiros": "2",
+            "valor": "R$ 600.000"
+        },
+        {
+            "descricao": "Apartamento compacto sem número de rua",
+            "nome": "Fernanda Souza",
+            "telefone": "(19) 91234-5678",
+            "rua": "Rua Sem Nome",
+            "bairo": "Centro",
+            "cidade": "Campinas",
+            "tamanho": "45m²",
+            "numQuartos": "1",
+            "numBanheiros": "1",
+            "valor": "R$ 250.000"
+        }
+    ]
+}
