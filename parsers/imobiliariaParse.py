@@ -25,7 +25,7 @@ for imovel in imoveis:
 
     endereco = imovel.getElementsByTagName('endereco')[0]
     imoveis_dict['rua'] = endereco.getElementsByTagName('rua')[0].firstChild.nodeValue
-    imoveis_dict['bairo'] = endereco.getElementsByTagName('bairro')[0].firstChild.nodeValue
+    imoveis_dict['bairro'] = endereco.getElementsByTagName('bairro')[0].firstChild.nodeValue
     imoveis_dict['cidade'] = cidade = endereco.getElementsByTagName('cidade')[0].firstChild.nodeValue
     numeros = endereco.getElementsByTagName('numero')
     for n in numeros: 
