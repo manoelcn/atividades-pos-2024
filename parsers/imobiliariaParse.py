@@ -17,11 +17,16 @@ for imovel in imoveis:
     proprietario = imovel.getElementsByTagName('proprietario')[0]
     imoveis_dict['nome'] = proprietario.getElementsByTagName('nome')[0].firstChild.nodeValue
     emails =  proprietario.getElementsByTagName('email')
+    email_list = []
     for e in emails:
-        imoveis_dict['email'] =e .firstChild.nodeValue
+        email_list.append(e .firstChild.nodeValue)
+        imoveis_dict['email'] = email_list
     telefones =  proprietario.getElementsByTagName('telefone')
+    telefone_list = []
     for t in telefones:
-        imoveis_dict['telefone'] = t.firstChild.nodeValue
+        telefone_list.append(t.firstChild.nodeValue)
+        imoveis_dict['telefone'] = telefone_list
+        
 
     endereco = imovel.getElementsByTagName('endereco')[0]
     imoveis_dict['rua'] = endereco.getElementsByTagName('rua')[0].firstChild.nodeValue

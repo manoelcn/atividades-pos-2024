@@ -3,8 +3,13 @@
         {
             "descricao": "Apartamento moderno no centro da cidade",
             "nome": "Maria Silva",
-            "email": "maria.silva@example.com",
-            "telefone": "(11) 91234-5678",
+            "email": [
+                "maria.silva@example.com"
+            ],
+            "telefone": [
+                "(11) 98765-4321",
+                "(11) 91234-5678"
+            ],
             "rua": "Rua das Flores",
             "bairro": "Centro",
             "cidade": "São Paulo",
@@ -16,7 +21,9 @@
         {
             "descricao": "Casa com quintal amplo",
             "nome": "João Oliveira",
-            "telefone": "(21) 99876-5432",
+            "telefone": [
+                "(21) 99876-5432"
+            ],
             "rua": "Avenida Brasil",
             "bairro": "Jardim das Acácias",
             "cidade": "Rio de Janeiro",
@@ -29,7 +36,9 @@
         {
             "descricao": "Apartamento com vista para o mar",
             "nome": "Ana Costa",
-            "email": "ana.costa@example.com",
+            "email": [
+                "ana.costa@example.com"
+            ],
             "rua": "Rua Atlântica",
             "bairro": "Copacabana",
             "cidade": "Rio de Janeiro",
@@ -42,7 +51,9 @@
         {
             "descricao": "Chácara em área rural",
             "nome": "Carlos Almeida",
-            "telefone": "(31) 98765-4321",
+            "telefone": [
+                "(31) 98765-4321"
+            ],
             "rua": "Estrada do Sol",
             "bairro": "Zona Rural",
             "cidade": "Belo Horizonte",
@@ -54,7 +65,9 @@
         {
             "descricao": "Apartamento compacto sem número de rua",
             "nome": "Fernanda Souza",
-            "telefone": "(19) 91234-5678",
+            "telefone": [
+                "(19) 91234-5678"
+            ],
             "rua": "Rua Sem Nome",
             "bairro": "Centro",
             "cidade": "Campinas",
