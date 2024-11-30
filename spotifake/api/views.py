@@ -14,11 +14,17 @@ class AlbumViewSet(viewsets.ModelViewSet):
     serializer_class = AlbumSerializer
 
     def get_queryset(self):
-        return Album.objects.filter(artista=self.kwargs['artista_pk'])
+        if self.kwargs:
+            return Album.objects.filter(artista=self.kwargs['artista_pk'])
+        return super().get_queryset()
+
 
 class MusicaViewSet(viewsets.ModelViewSet):
     queryset = Musica.objects.all()
     serializer_class = MusicaSerializer
 
     def get_queryset(self):
-        return Musica.objects.filter(album=self.kwargs['album_pk'])
+        if self.kwargs:
+            return Musica.objects.filter(album=self.kwargs['album_pk'])
+        return super().get_queryset()
+
