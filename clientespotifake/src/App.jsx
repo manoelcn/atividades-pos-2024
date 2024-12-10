@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './components/Footer';
 import Menu from './components/Menu';
@@ -13,7 +11,9 @@ function App() {
     <>
       
         <Menu></Menu>
-        
+        <div>
+          <p>Ainda não sei oq colocar aqui</p>
+        </div>
       <Footer></Footer>
     </>
   )
