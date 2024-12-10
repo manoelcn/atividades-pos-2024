@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import Footer from './components/Footer';
 import Menu from './components/Menu';
 
