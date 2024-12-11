@@ -3,9 +3,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Footer() {
     return (
-        <Navbar expand="lg" bg="dark" data-bs-theme="dark" fixed="bottom">
+        <Navbar expand="lg" style={{backgroundColor: "#1DB954"}} fixed="bottom">
             <Container className="d-flex justify-content-center">
-                <Navbar.Text className="text-white">SpotiFaique</Navbar.Text>
+                <Navbar.Text>SpotiFaique</Navbar.Text>
             </Container>
         </Navbar>
     );

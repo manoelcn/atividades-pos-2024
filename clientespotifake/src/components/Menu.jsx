@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Menu() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" style={{backgroundColor: "#1DB954"}}>
       <Container>
         <Navbar.Brand href="#home">SpotiFaique</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
