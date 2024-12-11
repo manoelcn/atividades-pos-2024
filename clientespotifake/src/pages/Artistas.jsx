@@ -53,8 +53,8 @@ const Artistas = () => {
     <div>
       <Container>
         <Row>
-          <h1>Artistas</h1>
           <Col>
+            <h1>Artistas</h1>
             <ul>
               {artistas.map((artista) => (
                 <li key={artista.id}>{artista.nome} - {artista.local} ({artista.ano_criacao})</li> // Exibe o nome de cada artista
@@ -62,21 +62,16 @@ const Artistas = () => {
             </ul>
           </Col>
           <Col>
-
-
-
+            <h1>Criar artista</h1>
             <Form onSubmit={adicionarArtista}>
               <Form.Group className="mb-3" controlId="formArtista">
-                <Form.Label>Nome</Form.Label>
-                <Form.Control type="text" placeholder="Digite o nome" value={novoArtista.nome} onChange={(e) => setNovoArtista({ ...novoArtista, nome: e.target.value })} required />
-
+                <Form.Label>Nome do artista</Form.Label>
+                <Form.Control type="text" placeholder="Digite o nome do artista" value={novoArtista.nome} onChange={(e) => setNovoArtista({ ...novoArtista, nome: e.target.value })} required />
                 <Form.Label>Local</Form.Label>
                 <Form.Control type="text" placeholder="Digite o local" value={novoArtista.local} onChange={(e) => setNovoArtista({ ...novoArtista, local: e.target.value })} required />
-
                 <Form.Label>Ano de criação</Form.Label>
                 <Form.Control type="number" placeholder="Digite o ano de criação" value={novoArtista.ano_criacao || ''} onChange={(e) => setNovoArtista({ ...novoArtista, ano_criacao: e.target.value ? parseInt(e.target.value) : null })} />
               </Form.Group>
-
               <Button variant="primary" type="submit">
                 Adicionar Artista
               </Button>
@@ -84,8 +79,6 @@ const Artistas = () => {
           </Col>
         </Row>
       </Container>
-
-
     </div>
   );
 };

@@ -65,24 +65,15 @@ const Musicas = () => {
                         </ul>
                     </Col>
                     <Col>
-                        <h1>Adicionar músicas</h1>
-
-
+                        <h1>Criar música</h1>
                         <Form onSubmit={adicionarMusica}>
                             <Form.Group className='mb-3' controlId='formMusica'>
                                 <Form.Label>Nome da música</Form.Label>
-                                <Form.Control type="text" value={novaMusica.nome} onChange={(e) => setNovaMusica({ ...novaMusica, nome: e.target.value })} required />
-
-                                <Form.Label>Duração (segundos)</Form.Label>
-                                <Form.Control type="number"
-                                    value={novaMusica.segundos || ''}
-                                    onChange={(e) => setNovaMusica({ ...novaMusica, segundos: e.target.value ? parseInt(e.target.value) : null })}
-                                    required />
-
+                                <Form.Control type="text" placeholder='Digite o nome da música' value={novaMusica.nome} onChange={(e) => setNovaMusica({ ...novaMusica, nome: e.target.value })} required />
+                                <Form.Label>Duração da música (segundos)</Form.Label>
+                                <Form.Control type="number" placeholder='Digite a duração da música em segundos' value={novaMusica.segundos || ''} onChange={(e) => setNovaMusica({ ...novaMusica, segundos: e.target.value ? parseInt(e.target.value) : null })} required />
                                 <Form.Label>Álbum</Form.Label>
-                                <Form.Select value={novaMusica.album || ''}
-                                    onChange={(e) => setNovaMusica({ ...novaMusica, album: e.target.value })}
-                                    required>
+                                <Form.Select value={novaMusica.album || ''} onChange={(e) => setNovaMusica({ ...novaMusica, album: e.target.value })} required>
                                     <option value="">Selecione um álbum</option>
                                     {albuns.map((album) => (
                                         <option key={album.id} value={album.id}>
