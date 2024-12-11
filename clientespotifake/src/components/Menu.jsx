@@ -7,13 +7,13 @@ function Menu() {
   return (
     <Navbar expand="lg" style={{backgroundColor: "#1DB954"}}>
       <Container>
-        <Navbar.Brand href="#home">SpotiFaique</Navbar.Brand>
+        <Navbar.Brand href="/">SpotiFaique</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Artistas</Nav.Link>
-            <Nav.Link href="#home">Álbuns</Nav.Link>
-            <Nav.Link href="#home">Músicas</Nav.Link>
+            <Nav.Link href="/artistas">Artistas</Nav.Link>
+            <Nav.Link href="/albuns">Álbuns</Nav.Link>
+            <Nav.Link href="/musicas">Músicas</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
