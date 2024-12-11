@@ -12,7 +12,7 @@ const Albuns = () => {
                 const data = await getData('albuns');
                 setAlbuns(data);
             } catch (error) {
-                setError('Erro ao carregar artistas');
+                setError('Erro ao carregar álbuns');
             } finally {
                 setLoading(false);
             }
