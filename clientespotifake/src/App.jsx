@@ -1,20 +1,22 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Index from './pages/Index';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-        <Menu></Menu>
+    <div>
+      <Menu></Menu>
+      <Router>
         <div>
-          <p>Ainda não sei oq colocar aqui</p>
+          <Routes>
+            <Route path="/" element={<Index />} />
+          </Routes>
         </div>
+      </Router>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 
