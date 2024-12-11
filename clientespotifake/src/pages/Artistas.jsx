@@ -29,12 +29,13 @@ const Artistas = () => {
     fetchArtistas(); // Chama a função para buscar os dados
   }, []); // O array vazio significa que o useEffect será executado apenas uma vez, ao montar o componente
 
+  // Função para adicionar um novo artista
   const adicionarArtista = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Previne o reload da página ao submeter o formulário
     try {
       const artistaCriado = await postData('artistas/', novoArtista);
-      setArtistas([...artistas, artistaCriado]);
-      setNovoArtista({ nome: '', local: '', ano_criacao: null });
+      setArtistas([...artistas, artistaCriado]); // Adiciona o novo artista à lista atual
+      setNovoArtista({ nome: '', local: '', ano_criacao: null }); // Reseta o formulário
     } catch (error) {
       console.error('Erro ao adicionar artista:', error);
     }
