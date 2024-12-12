@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import ButtonDelete from '../components/ButtonDelete';
+import ButtonEdit from '../components/ButtonEdit';
 import { getData, postData } from '../services/wrapperAPI';
 
 const Musicas = () => {
@@ -58,9 +60,7 @@ const Musicas = () => {
                         <ul>
                             <h1>Músicas</h1>
                             {musicas.map((musica) => (
-                                <li key={musica.id}>
-                                    {musica.nome} - {musica.segundos}s - Álbum: {albuns.find((a) => a.id === musica.album)?.nome || 'Desconhecido'}
-                                </li>
+                                <li key={musica.id}>{musica.nome} <ButtonEdit /> <ButtonDelete /></li>
                             ))}
                         </ul>
                     </Col>

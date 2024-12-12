@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import ButtonDelete from '../components/ButtonDelete';
+import ButtonEdit from '../components/ButtonEdit';
 import { getData, postData, putData, deleteData } from '../services/wrapperAPI'; // Importe a função getData do apiWrapper
 
 const Artistas = () => {
@@ -57,7 +59,7 @@ const Artistas = () => {
             <h1>Artistas</h1>
             <ul>
               {artistas.map((artista) => (
-                <li key={artista.id}>{artista.nome} - {artista.local} ({artista.ano_criacao})</li> // Exibe o nome de cada artista
+                <li key={artista.id}>{artista.nome} <ButtonEdit /> <ButtonDelete /></li> // Exibe o nome de cada artista
               ))}
             </ul>
           </Col>

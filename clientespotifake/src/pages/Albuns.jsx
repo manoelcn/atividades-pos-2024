@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import ButtonDelete from '../components/ButtonDelete';
+import ButtonEdit from '../components/ButtonEdit';
 import { getData, postData, putData, deleteData } from '../services/wrapperAPI';
 
 const Albuns = () => {
@@ -58,7 +60,7 @@ const Albuns = () => {
                         <h1>Álbuns</h1>
                         <ul>
                             {albuns.map((album) => (
-                                <li key={album.id}>{album.nome}</li>
+                                <li key={album.id}>{album.nome} <ButtonEdit /> <ButtonDelete /></li>
                             ))}
                         </ul>
                     </Col>
