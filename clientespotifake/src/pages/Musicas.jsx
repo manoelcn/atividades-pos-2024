@@ -85,7 +85,7 @@ const Musicas = () => {
                         <ul>
                             <h1>Músicas</h1>
                             {musicas.map((musica) => (
-                                <li key={musica.id}>{musica.nome} <ButtonEdit onClick={() => abrirModalEdicao(musica)} /> <ButtonDelete /></li>
+                                <li key={musica.id}>{musica.nome} <ButtonEdit onClick={() => abrirModalEdicao(musica)} /> <ButtonDelete onClick={() => abrirModalDelecao(musica)} /></li>
                             ))}
                         </ul>
                     </Col>
@@ -162,6 +162,36 @@ const Musicas = () => {
                     </Button>
                     <Button variant="primary" onClick={salvarAlteracoes}>
                         Salvar Alterações
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            <Modal show={showModalDelete} onHide={() => setShowModalDelete(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Confirmação de Deleção</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {musicaParaDeletar && (
+                        <p>Tem certeza que deseja deletar a música "{musicaParaDeletar.nome}"?</p>
+                    )}
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModalDelete(false)}>
+                        Cancelar
+                    </Button>
+                    <Button
+                        variant="danger"
+                        onClick={async () => {
+                            try {
+                                await deleteData(`musicas/${musicaParaDeletar.id}/`);
+                                setMusicas(musicas.filter((a) => a.id !== musicaParaDeletar.id));
+                                setShowModalDelete(false);
+                            } catch (error) {
+                                console.error('Erro ao deletar a música:', error);
+                            }
+                        }}
+                    >
+                        Confirmar
                     </Button>
                 </Modal.Footer>
             </Modal>
