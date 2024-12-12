@@ -15,9 +15,12 @@ const Artistas = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [novoArtista, setNovoArtista] = useState({ nome: '', local: '', ano_criacao: null });
+  const [artistaEditando, setArtistaEditando] = useState(null);
+  const [artistaParaDeletar, setArtistaParaDeletar] = useState(null);
   // Estados para o modal de edição
   const [showModal, setShowModal] = useState(false);
-  const [artistaEditando, setArtistaEditando] = useState(null);
+  const [showModalDelete, setShowModalDelete] = useState(false);
+
 
   // Utilize o useEffect para buscar os dados quando o componente for montado
   useEffect(() => {
@@ -53,6 +56,11 @@ const Artistas = () => {
     setShowModal(true);
   };
 
+  const abrirModalDelecao = (artista) => {
+    setArtistaParaDeletar(artista);
+    setShowModalDelete(true);
+  };
+
   // Função para salvar as alterações feitas no modal
   const salvarAlteracoes = async () => {
     try {
@@ -80,7 +88,7 @@ const Artistas = () => {
             <h1>Artistas</h1>
             <ul>
               {artistas.map((artista) => (
-                <li key={artista.id}>{artista.nome} <ButtonEdit onClick={() => abrirModalEdicao(artista)} /> <ButtonDelete /></li> // Exibe o nome de cada artista
+                <li key={artista.id}>{artista.nome} <ButtonEdit onClick={() => abrirModalEdicao(artista)} /> <ButtonDelete onClick={() => abrirModalDelecao(artista)} /></li> // Exibe o nome de cada artista
               ))}
             </ul>
           </Col>
@@ -145,6 +153,35 @@ const Artistas = () => {
           </Button>
           <Button variant="primary" onClick={salvarAlteracoes}>
             Salvar Alterações
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      <Modal show={showModalDelete} onHide={() => setShowModalDelete(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmação de Deleção</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {artistaParaDeletar && (
+            <p>Tem certeza que deseja deletar o artista "{artistaParaDeletar.nome}"?</p>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModalDelete(false)}>
+            Cancelar
+          </Button>
+          <Button
+            variant="danger"
+            onClick={async () => {
+              try {
+                await deleteData(`artistas/${artistaParaDeletar.id}/`);
+                setArtistas(artistas.filter((a) => a.id !== artistaParaDeletar.id));
+                setShowModalDelete(false);
+              } catch (error) {
+                console.error('Erro ao deletar o artista:', error);
+              }
+            }}
+          >
+            Confirmar
           </Button>
         </Modal.Footer>
       </Modal>
