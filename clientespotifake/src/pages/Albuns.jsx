@@ -16,6 +16,8 @@ const Albuns = () => {
     const [error, setError] = useState(null);
     const [novoAlbum, setNovoAlbum] = useState({ nome: '', ano: null, artista: null });
     const [albumEditando, setAlbumEditando] = useState(null);
+    const [albumParaDeletar, setAlbumParaDeletar] = useState(null);
+    const [showModalDelete, setShowModalDelete] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
@@ -52,6 +54,11 @@ const Albuns = () => {
         setShowModal(true);
     };
 
+    const abrirModalDelecao = (album) => {
+        setAlbumParaDeletar(album);
+        setShowModalDelete(true);
+    };
+
     const salvarAlteracoes = async () => {
         try {
             const albumAtualizado = await putData(`albuns/${albumEditando.id}/`, albumEditando);
@@ -81,7 +88,7 @@ const Albuns = () => {
                                 <li key={album.id}>
                                     {album.nome}{' '}
                                     <ButtonEdit onClick={() => abrirModalEdicao(album)} />{' '}
-                                    <ButtonDelete />
+                                    <ButtonDelete onClick={() => abrirModalDelecao(album)} />
                                 </li>
                             ))}
                         </ul>
@@ -178,6 +185,36 @@ const Albuns = () => {
                     </Button>
                     <Button variant="primary" onClick={salvarAlteracoes}>
                         Salvar Alterações
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            <Modal show={showModalDelete} onHide={() => setShowModalDelete(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Confirmação de Deleção</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {albumParaDeletar && (
+                        <p>Tem certeza que deseja deletar o artista "{albumParaDeletar.nome}"?</p>
+                    )}
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModalDelete(false)}>
+                        Cancelar
+                    </Button>
+                    <Button
+                        variant="danger"
+                        onClick={async () => {
+                            try {
+                                await deleteData(`albuns/${albumParaDeletar.id}/`);
+                                setAlbuns(albuns.filter((a) => a.id !== albumParaDeletar.id));
+                                setShowModalDelete(false);
+                            } catch (error) {
+                                console.error('Erro ao deletar o álbum:', error);
+                            }
+                        }}
+                    >
+                        Confirmar
                     </Button>
                 </Modal.Footer>
             </Modal>
