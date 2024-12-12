@@ -1,8 +1,12 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 
-function ButtonDelete() {
+const ButtonDelete = ({ onClick }) => {
     return (
-        <button className='btn btn-danger'><i class="bi bi-trash" /></button>
+        <Button variant='danger' onClick={onClick}>
+            <i class="bi bi-trash" />
+        </Button>
     );
 };
 

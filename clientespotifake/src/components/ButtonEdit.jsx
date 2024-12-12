@@ -1,8 +1,12 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 
-function ButtonEdit() {
+const ButtonEdit = ({ onClick }) => {
     return (
-        <button className='btn btn-warning'><i class="bi bi-pencil-square" /></button>
+        <Button variant="warning" onClick={onClick}>
+            <i class="bi bi-pencil-square" />
+        </Button>
     );
 };
 
