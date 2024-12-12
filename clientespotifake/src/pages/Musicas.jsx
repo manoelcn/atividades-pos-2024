@@ -107,7 +107,7 @@ const Musicas = () => {
                                     ))}
                                 </Form.Select>
                             </Form.Group>
-                            <Button variant="primary" type="submit">
+                            <Button variant="success" type="submit">
                                 Adicionar Música
                             </Button>
                         </Form>
@@ -160,7 +160,7 @@ const Musicas = () => {
                     <Button variant="secondary" onClick={() => setShowModal(false)}>
                         Cancelar
                     </Button>
-                    <Button variant="primary" onClick={salvarAlteracoes}>
+                    <Button variant="success" onClick={salvarAlteracoes}>
                         Salvar Alterações
                     </Button>
                 </Modal.Footer>

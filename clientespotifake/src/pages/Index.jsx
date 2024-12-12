@@ -7,11 +7,10 @@ const Index = () => {
             <div class="px-4 py-5 my-5 text-center">
                 <div class="col-lg-6 mx-auto">
                     <Card style={{ width: '800px' }} border="0">
-                        <Card.Img variant="top" src="#" />
                         <Card.Body>
-                            <Card.Title className='align-items-center'>Versão totalmente original</Card.Title>
+                            <Card.Title className='align-items-center'>Sem criatividade pra oq colocar aqui.</Card.Title>
                             <Card.Text>
-                                Sem criatividade pra escrever alguma coisa aqui.
+                                site incrivelmente bonito
                             </Card.Text>
                         </Card.Body>
                     </Card>

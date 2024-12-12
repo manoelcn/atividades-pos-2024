@@ -103,7 +103,7 @@ const Artistas = () => {
                 <Form.Label>Ano de criação</Form.Label>
                 <Form.Control type="number" placeholder="Digite o ano de criação" value={novoArtista.ano_criacao || ''} onChange={(e) => setNovoArtista({ ...novoArtista, ano_criacao: e.target.value ? parseInt(e.target.value) : null })} />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button variant="success" type="submit">
                 Adicionar Artista
               </Button>
             </Form>
@@ -151,7 +151,7 @@ const Artistas = () => {
           <Button variant="secondary" onClick={() => setShowModal(false)}>
             Cancelar
           </Button>
-          <Button variant="primary" onClick={salvarAlteracoes}>
+          <Button variant="success" onClick={salvarAlteracoes}>
             Salvar Alterações
           </Button>
         </Modal.Footer>

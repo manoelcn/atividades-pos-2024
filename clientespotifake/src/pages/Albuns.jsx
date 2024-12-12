@@ -127,7 +127,7 @@ const Albuns = () => {
                                     ))}
                                 </Form.Select>
                             </Form.Group>
-                            <Button variant="primary" type="submit">
+                            <Button variant="success" type="submit">
                                 Adicionar Álbum
                             </Button>
                         </Form>
@@ -183,7 +183,7 @@ const Albuns = () => {
                     <Button variant="secondary" onClick={() => setShowModal(false)}>
                         Cancelar
                     </Button>
-                    <Button variant="primary" onClick={salvarAlteracoes}>
+                    <Button variant="success" onClick={salvarAlteracoes}>
                         Salvar Alterações
                     </Button>
                 </Modal.Footer>
